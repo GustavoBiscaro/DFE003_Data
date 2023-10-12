@@ -1,0 +1,185 @@
+* {
+ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin: 25px;
+    background-image: url('../assets/beatles.webp');
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    
+}
+
+
+/* Cabeçalho */
+header {
+
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url('../assets/logo.png');
+    background-repeat: no-repeat;
+    background-size: 5%;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+header h1 {
+    
+    display: flex;
+    font-size: 2em;
+    color: rgba(248, 3, 3, 0.9);
+    letter-spacing: 10px;
+    opacity: 1;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    
+}
+
+nav {
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 5%;
+    padding: 20px;
+    width: 70%;
+    border: 5px groove #c6c6c6;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 25px;
+    padding: 20px;
+    font-size: 0.9em;
+
+}
+
+#menu li {
+    font-weight: bolder;
+    margin: 30px;
+    font-size: 1.4em;
+    padding: 15px;
+}
+
+#menu li a {
+    display: flex;
+    text-transform: none;
+    text-decoration: none;
+    padding: 15px;
+    margin: 5px;
+    color: red;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#menu li a:hover {
+    background-color: #c6c6c6;
+    color: #000;
+    transition: all .2s;
+}
+
+/* Conteúdo */
+/* Sessões */
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    opacity: .9;
+}
+
+#sobre h2 {
+    font-size: 2em;
+    letter-spacing: 4px;
+    background: linear-gradient(45deg, black, #c6c6c6);
+    color: white;
+    
+    font-weight: bolder;
+}
+
+#sobre p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.53em;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: justify;
+    color: #000;
+    font-weight: bolder;
+    width: 70%;
+    margin: 10px;
+    padding: 15px;
+    background: #c6c6c6;
+    
+}
+
+/* Imagem */
+
+figure {
+   display: flex;
+   justify-content: flex-start;
+   align-self: center;
+   flex-grow: 1;
+    margin: 10px;
+    padding: 15px;
+    background: #c6c6c6;
+}
+
+figcaption {
+    font-weight: bolder;
+    background: #fff;
+    padding: 20px;
+    margin: 15px;
+    color: red;
+}
+
+figcaption:hover {
+    font-size: 1.2em;
+    background-color: red;
+    color: #000;
+    transition: all .2s;
+}
+#sobre h6 {
+    font-size: 1.3em;
+    background: white;
+    color: red;
+}
+
+.cite {
+    background: white;
+    font-size: 0.7em;
+    font-weight: bolder;
+    color: #000;
+}
+
