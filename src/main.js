@@ -1,30 +1,31 @@
 try {
   const beatles = require('../src/data/beatles_songs/beatles_songs.json');
-
   const beatlesObject = JSON.parse(JSON.stringify(beatles, null, 2));
 
-// Exibe a quantidade total de álbuns
+
+
+  // Exibe a quantidade total de álbuns
   function totalAlbuns() {
     const totalAlbuns = beatlesObject.length;
     console.log("Total de Álbuns: " + totalAlbuns);
   }
-  
 
-// Nome de cada álbum
+
+  // Nome de cada álbum
   function tituloPorAlbum() {
     for (let albuns of beatlesObject) {
       console.log(albuns.id + ' ' + albuns.name);
     }
   }
 
-// Quantidade de música por álbum
+  // Quantidade de música por álbum
   function musicaPorAlbum() {
     for (let albuns of beatlesObject) {
       console.log(albuns.id + "ª " + "Álbum: " + albuns.name + "\nQuantidade de música: " + albuns.tracks.length + "\n\n");
     }
   }
 
-// Todas faixas de música
+  // Todas faixas de música
   function tracklist() {
     for (let album of beatlesObject) {
       console.log(album.id + "ª " + album.name);
@@ -36,8 +37,6 @@ try {
 
       console.log(); // Pula uma linha após cada álbum
     }
-
-
   }
 
 
