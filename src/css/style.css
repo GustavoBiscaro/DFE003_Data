@@ -235,6 +235,7 @@ figcaption:hover {
     color: red;
     letter-spacing: 10%;
     font-style: italic;
+  
 }
 
 #discografia h3 {
@@ -246,7 +247,6 @@ figcaption:hover {
     text-align: center;
     padding: 15px;
     color: red;
-
 }
 
 #discografia p {
@@ -254,7 +254,6 @@ figcaption:hover {
     font-weight: bolder;
     color: black;
     margin: 15px;
-
 }
 
 
