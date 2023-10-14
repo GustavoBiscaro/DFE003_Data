@@ -254,6 +254,7 @@ figcaption:hover {
     font-weight: bolder;
     color: black;
     margin: 15px;
+    border: 2px groove gray;
 }
 
 
