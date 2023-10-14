@@ -12,7 +12,7 @@ const beatlesObject = JSON.parse(JSON.stringify(beatles, null, 2));
 // Exibe a quantidade total de álbuns
 function totalAlbuns() {
   const totalAlbuns = beatlesObject.length;
-  return "<h1>Total de Álbuns</h1> " + "<p>" + totalAlbuns + "</p>";
+  return "<h2>Total de Álbuns</h2> " + "<img src='./assets/div_img/number.jpg' width='200'>"+ "<p>" + totalAlbuns + " álbuns lançados </p> ";
 }
 totalDeAlbuns.innerHTML = totalAlbuns();
 
@@ -20,25 +20,25 @@ totalDeAlbuns.innerHTML = totalAlbuns();
 
 // Nome de cada álbum
 function tituloPorAlbum() {
-  let resultado = "<h1>Nome dos álbuns</h1>";
+  let resultado = "<h2>Nome dos álbuns</h2>" + "<img src='./assets/div_img/discografia.jpeg' width='200'>";
   for (let albuns of beatlesObject) {
     resultado += "<p>" + albuns.name + "</p>";
   }
   return resultado;
 }
 
-nomeDeAlbuns.innerHTML = "<img src='./assets/div_img/discografia.jpeg' width='450'>" + tituloPorAlbum();
+nomeDeAlbuns.innerHTML = tituloPorAlbum();
 
 // Quantidade de música por álbum
 function musicaPorAlbum() {
-  let resultado = "<h1>Quantidade de música por álbum</h1>";
+  let resultado = "<h2>Quantidade de música por álbum</h2>" + "<img src='./assets/div_img/sucessos.jpg' width='200'>";
   for (let albuns of beatlesObject) {
-    resultado += "<h2>" + albuns.name + "</h2>" + "<p>" + albuns.tracks.length + "</p>";
+    resultado += "<h3>" + albuns.name + "</h3>" + "<p>" + albuns.tracks.length + "</p>";
   }
   return resultado;
 }
 
-totalTracklist.innerHTML = "<img src='./assets/div_img/sucessos.jpg' width='450'>" + musicaPorAlbum();
+totalTracklist.innerHTML = musicaPorAlbum();
 
 // Todas faixas de música
 function tracklist() {
@@ -46,7 +46,7 @@ function tracklist() {
 
   for (let album of beatlesObject) {
   
-    resultado += "<h2>" + album.name + "</h2>" + "<br>";
+    resultado += "<h3>" + album.name + "</h3>" + "<br>";
 
     for (let track of album.tracks) {
       resultado += "<p>" + track + "</p>";
@@ -58,7 +58,7 @@ function tracklist() {
   return resultado;
 }
 
-listTracklist.innerHTML ="<img src='./assets/div_img/tracklist.jpg' width='450'>" + "<h1>Tracklist</h1>" + tracklist();
+listTracklist.innerHTML = "<h2>Tracklist</h2>" + "<img src='./assets/div_img/tracklist.jpg' width='200'>" + tracklist();
 
 
 
