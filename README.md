@@ -34,7 +34,7 @@ As principais tecnologias utilizadas neste projeto foram:
 ## Conceitos
 * Trabalhar com conversões de objetos, que seria pegar um arquivo JSON para passá-lo como um objeto e assim trabalhar conceitualmente apenas com métodos voltados a isto.
 * Importações de rotas e módulos através do Node, ainda que seja bem básico, não seria possível importar a lista sem o uso do NodeJS.
-* Métodos de funções, como o for..of que trabalha justamnente com objetos, além das condicionais.
+* Métodos de funções, como o for..of que trabalha justamente com objetos, além das condicionais.
 
 
 
