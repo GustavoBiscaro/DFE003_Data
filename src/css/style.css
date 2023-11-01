@@ -272,7 +272,51 @@ figcaption:hover {
     padding: 15px;
 }
 
+input {
+    width: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px groove #000;    
+    font-weight: bold;
+    font-size: 1.2em;
+}
 
+select {
+    font-size: 0.7em;
+    width: 10%;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: #000;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 2px;
+}
+
+
+
+button {
+    font-size: 2em;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px groove #000;
+    color: red;
+}
+
+button:hover {
+    background-color: #c6c6c6;
+    color: #000;
+    transition: all .2s;
+    border: 5px solid red;
+}
+
+#voiceMenuText {
+    padding: 15px;
+    font-size: 1.7em;
+    font-weight: bolder;
+    color: red;
+    
+}
 /* Footer */
 
 footer {
